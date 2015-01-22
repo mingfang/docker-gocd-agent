@@ -1,0 +1,7 @@
+#!/bin/bash
+
+source /etc/envvars
+env
+
+exec 2>&1
+exec /usr/share/go-agent/agent.sh

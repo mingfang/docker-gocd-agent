@@ -1,0 +1,1 @@
+docker run -e GO_SERVER=`hostname` -v `pwd`/etc/default/go-agent:/etc/default/go-agent -v `pwd`/etc/autoregister.properties:/usr/share/go-agent/autoregister.properties -v /var/run/docker.sock:/run/docker.sock --rm -i -t go-agent /bin/bash
